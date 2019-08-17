@@ -1,9 +1,10 @@
-# 基础平台（platform）的设计指导
+# 基础平台（platform）
 
 基础平台为教学应用程序提供了一套基础运行环境。硬件主要是指板子（board），
 软件主要包含BSP（bootloader、硬件驱动程序）、OS（一般是linux）、中间件
 runtime的库、SDK、各种工具软件和文档。
 
+## 设计原则
 :bulb: 请参考Arduino和Raspberry Pi！！！
 
 1. 要避免多个功能相似的板子。
@@ -32,4 +33,15 @@ runtime的库、SDK、各种工具软件和文档。
 
      可参考树莓派的[gpiozero](https://gpiozero.readthedocs.io/en/stable/)
 
+## SDK
 
+维护SDK，包含bootloader, kernel, runtime library, file system.
+
+SDK要通过git维护管理。
+
+提供包含SDK以及所需环境的docker image。
+
+## pre-built image
+
+维护预编译好的linux image，包含bootloader、kernel、hardware drivers、filesystem、runtime library以及必要的
+其他软件和文档。
