@@ -31,7 +31,8 @@ runtime的库、SDK、各种工具软件和文档。
 
      提供python/javascript等编程接口（以及响应的文档）。
 
-     可参考树莓派的[gpiozero](https://gpiozero.readthedocs.io/en/stable/)
+     可参考树莓派的[GPIO Zero](https://gpiozero.readthedocs.io/en/stable/), 
+     [pigpio](http://abyz.me.uk/rpi/pigpio/) and [WiringPi](http://wiringpi.com/)。
 
 ## SDK
 
@@ -43,5 +44,9 @@ SDK要通过git维护管理。
 
 ## pre-built image
 
-维护预编译好的linux image，包含bootloader、kernel、hardware drivers、filesystem、runtime library以及必要的
-其他软件和文档。
+维护预编译好的linux image，包含bootloader、kernel、hardware drivers、filesystem、runtime library以及必要的其它软件和文档。
+
+## 使用树莓派做原型
+
+教学应用开发过程中，可能发现我们的基础平台缺乏对某一特定硬件的支持，或者可能硬件有问题，
+这时候可以考虑使用树莓派。树莓派的使用请参照[这里](raspi.md)
