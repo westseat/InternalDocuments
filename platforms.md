@@ -1,8 +1,10 @@
 # 基础平台（platform）的设计指导
 
-基础平台提供一套教学应用程序的基础运行环境。硬件主要是指板子（board），软件主要
-包含BSP（bootloader、硬件驱动程序）、OS（一般是linux）、中间件runtime的库、
-SDK、各种工具软件和文档。
+基础平台为教学应用程序提供了一套基础运行环境。硬件主要是指板子（board），
+软件主要包含BSP（bootloader、硬件驱动程序）、OS（一般是linux）、中间件
+runtime的库、SDK、各种工具软件和文档。
+
+:bulb: 请参考Arduino和Raspberry Pi！！！
 
 1. 要避免多个功能相似的板子。
 
@@ -20,8 +22,6 @@ SDK、各种工具软件和文档。
 
    i/o接口越丰富越好用，教学案例的开发越方便。
 
-   请参考Arduino和Raspberry Pi！！！
-
    * 丰富
 
      基础板尽量提供这些接口，不能在基础板上提供的就 通过扩展板提供。
@@ -29,5 +29,7 @@ SDK、各种工具软件和文档。
    * 易用
 
      提供python/javascript等编程接口（以及响应的文档）。
+
+     可参考树莓派的[gpiozero](https://gpiozero.readthedocs.io/en/stable/)
 
 
