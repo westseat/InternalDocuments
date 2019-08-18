@@ -6,6 +6,6 @@
   
 ## 工作记录
 
-| 日期   | 时间段   | 时长   | 工作内容 | 
-|-------|----------|--------|---------|
-| 2019-08-18 | 10:50-11:30 | 0.5h  | 更新westseat相关仓库，`emgConnector`,`internalDocuemnt's wiki`及`emgClient` |
+| 日期   | 时间段   | 工作内容 | 时长   |
+|-------|----------|---------|--------|
+| 2019-08-18 | 10:50-11:30 | 更新westseat相关仓库，`emgConnector`,`internalDocuemnt's wiki`及`emgClient` | 0.5h |
