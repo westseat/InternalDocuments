@@ -29,7 +29,7 @@ runtime的库、SDK、各种工具软件和文档。
     
    * 易用
 
-     提供python/javascript等编程接口（以及响应的文档）。
+     提供python/javascript等编程接口（以及配套的文档）。
 
      可参考树莓派的[GPIO Zero](https://gpiozero.readthedocs.io/en/stable/), 
      [pigpio](http://abyz.me.uk/rpi/pigpio/) and [WiringPi](http://wiringpi.com/)。
