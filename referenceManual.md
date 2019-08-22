@@ -6,3 +6,5 @@
 
 * python
     * [gpio programming in python](https://github.com/raspberrypi/documentation/blob/master/usage/gpio/python/README.md)
+* ARM人工智能开发平台(RK3399)
+   * [SDK](http://www.t-firefly.com/doc/download/page/id/31.html)
