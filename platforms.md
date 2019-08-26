@@ -62,4 +62,5 @@ SDK要通过git维护管理。
 注意：文档里的[tutorial](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)里安装的是debian，ubuntu
 的image在如下地址：
 > https://mirrors.aliyun.com/ubuntu-ports/dists/xenial/main/installer-arm64/current/images/netboot/ubuntu-installer/arm64/initrd.gz
+
 > https://mirrors.aliyun.com/ubuntu-ports/dists/xenial/main/installer-arm64/current/images/netboot/ubuntu-installer/arm64/linux
