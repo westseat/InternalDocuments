@@ -1,8 +1,8 @@
 # 基础平台（platform）
 
 基础平台为教学应用程序提供了一套基础运行环境。硬件主要是指板子（board），
-软件主要包含BSP（bootloader、硬件驱动程序）、OS（一般是linux）、中间件
-runtime的库、SDK、各种工具软件和文档。
+软件主要包含BSP（bootloader、kernel、硬件驱动程序）、OS（一般是linux）、
+runtime libraries、SDK、各种工具软件和文档。
 
 ## 设计原则
 :bulb: 请参考Arduino和Raspberry Pi！！！
@@ -36,7 +36,7 @@ runtime的库、SDK、各种工具软件和文档。
 
 ## SDK
 
-维护SDK，包含bootloader, kernel, runtime library, file system.
+维护SDK，包含bootloader, kernel, runtime library, rootfs。
 
 SDK要通过git维护管理。
 
@@ -44,9 +44,22 @@ SDK要通过git维护管理。
 
 ## pre-built image
 
-维护预编译好的linux image，包含bootloader、kernel、hardware drivers、filesystem、runtime library以及必要的其它软件和文档。
+维护预编译好的linux image，包含bootloader、kernel、hardware drivers、rootfs、runtime libraries以及必要的其它软件和文档。
 
 ## 使用树莓派做原型
 
 教学应用开发过程中，可能发现我们的基础平台缺乏对某一特定硬件的支持，或者可能硬件有问题，
 这时候可以考虑使用树莓派。树莓派的使用请参照[这里](raspi.md)
+
+## `qemu for arm`
+
+很多软件cross-build环境设置很麻烦 —— 一般需要rootfs中的库，不如板子上natvie-build简单，
+但是因为开发板性能让编译变得耗时过长，甚至因为内存太小导致编译出错。
+
+`qemu for arm`是一个在pc上的arm虚拟机，支持armv7以及armv8（aarch64），请参考
+[qemu的文档](https://wiki.qemu.org/Documentation/Platforms/ARM)。
+
+注意：文档里的[tutorial](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)里安装的是debian，ubuntu
+的image在如下地址：
+> https://mirrors.aliyun.com/ubuntu-ports/dists/xenial/main/installer-arm64/current/images/netboot/ubuntu-installer/arm64/initrd.gz
+> https://mirrors.aliyun.com/ubuntu-ports/dists/xenial/main/installer-arm64/current/images/netboot/ubuntu-installer/arm64/linux
